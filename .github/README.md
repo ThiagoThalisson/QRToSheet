@@ -1,12 +1,17 @@
+<div align="center">
+
 # 📝️ `QRToSheet` <!-- omit in toc -->
 
-## Table of Contents <!-- omit in toc -->
+</div>
 
-- [Features](#features)
-- [Dependencies](#dependencies)
-- [Installation](#installation)
+## 📖 `Table Of Contents` <!-- omit in toc -->
+
+
+- [🚗 `Features`](#-features)
+- [📋 `Dependencies`](#-dependencies)
+- [📥 `Istallation`](#-istallation)
   - [Using Pip](#using-pip)
-- [Usage](#usage)
+- [⚙️ `Usage`](#️-usage)
   - [1. Create A Google Form](#1-create-a-google-form)
   - [2. Get The Pre-Filled Link](#2-get-the-pre-filled-link)
   - [3. Extract Required Values](#3-extract-required-values)
@@ -14,15 +19,15 @@
   - [5. Link The Form To A Google Sheet](#5-link-the-form-to-a-google-sheet)
   - [6. Run The Script](#6-run-the-script)
   - [7. Verify QR Code Generation](#7-verify-qr-code-generation)
-- [Customization](#customization)
+- [🔧 `Customization`](#-customization)
 
-## Features
+## 🚗 `Features`
 
 - **No server or database required** – Generates QR codes locally without external dependencies.
 - **Personalized QR codes** – Each generated QR code links to a Google Form with a pre-filled user name.
 - **Automated pre-filling** – Users scanning the QR code will see their name already entered in the form field.
 
-## Dependencies
+## 📋 `Dependencies`
 
 Ensure you have Python installed on your system. Then, install the required dependencies:
 
@@ -30,7 +35,7 @@ Ensure you have Python installed on your system. Then, install the required depe
 - [dotenv](https://pypi.org/project/python-dotenv/)
 - [qrcode](https://pypi.org/project/qrcode/)
 
-## Installation
+## 📥 `Istallation`
 
 ### Using Pip
 
@@ -40,7 +45,7 @@ If you're not using NixOS, you can install all dependencies with:
 pip install -r requirements.txt
 ```
 
-## Usage
+## ⚙️ `Usage`
 
 ### 1. Create A Google Form
 
@@ -98,6 +103,8 @@ python main.py
 - It will contain personalized QR codes for each user in the `.env` file.
 - These QR codes will direct users to the Google Form with their name pre-filled.
 
-## Customization
+## 🔧 `Customization`
 
 The script currently supports only a single name field, but it can be modified to handle additional fields if needed.
+
+- [⬆ Back To Top](%EF%B8%8F-qrtosheet-)
