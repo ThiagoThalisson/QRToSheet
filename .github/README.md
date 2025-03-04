@@ -106,4 +106,4 @@ python main.py
 
 The script currently supports only a single name field, but it can be modified to handle additional fields if needed.
 
-- [⬆ Back To Top](#%EF%B8%8F-qrtosheet-)
+[⬆ Back To Top](#%EF%B8%8F-qrtosheet-)
