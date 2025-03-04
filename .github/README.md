@@ -8,7 +8,7 @@
 
 - [🚗 `Features`](#-features)
 - [📋 `Dependencies`](#-dependencies)
-- [📥 `Istallation`](#-istallation)
+- [📥 `Installation`](#-installation)
   - [Using Pip](#using-pip)
 - [⚙️ `Usage`](#️-usage)
   - [1. Create A Google Form](#1-create-a-google-form)
@@ -34,7 +34,7 @@ Ensure you have Python installed on your system. Then, install the required depe
 - [dotenv](https://pypi.org/project/python-dotenv/)
 - [qrcode](https://pypi.org/project/qrcode/)
 
-## 📥 `Istallation`
+## 📥 `Installation`
 
 ### Using Pip
 
