@@ -8,6 +8,7 @@ load_dotenv()
 
 form_id = os.getenv("FORM_ID")
 users = os.getenv("USERS", "").split(",")
+entry_number = os.getenv("ENTRY")
 
 if not form_id:
     print("Error: FORM_ID environment variable is not set.")
@@ -17,16 +18,21 @@ if not users or users == [""]:
     print("Error: USERS environment variable is not set.")
     exit(1)
 
+if not entry_number:
+    print("Error: ENTRY environment variable is not set.")
+    exit(1)
+
 QR_FOLDER = "qr_codes"
 os.makedirs(QR_FOLDER, exist_ok=True)
 
 FONT_PATH = "/usr/share/fonts/TTF/DejaVuSans-Bold.ttf"
 FONT_SIZE = 30
 
+
 def generate_qr_codes():
     for user in users:
         user = user.strip()
-        qr_data = f"https://docs.google.com/forms/d/e/{form_id}/viewform?usp=pp_url&entry.898992391={user.replace(' ', '+')}"
+        qr_data = f"https://docs.google.com/forms/d/e/{form_id}/viewform?usp=pp_url&entry.{entry_number}={user.replace(' ', '+')}"
         qr = qrcode.make(qr_data).convert("RGB")
 
         qr_size = qr.size[0]
@@ -49,5 +55,5 @@ def generate_qr_codes():
         image.save(filename)
         print(f"✅ QR Code generated for {user}: {filename}")
 
-generate_qr_codes()
 
+generate_qr_codes()
